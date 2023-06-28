@@ -5,7 +5,8 @@ public class StringTest2 {
 		
 		String str = "12345678";
 		
-		int idx = str.indexOf(0);
+		int idx = str.indexOf(1);
+		System.out.println(idx);
 	}
 
 }
