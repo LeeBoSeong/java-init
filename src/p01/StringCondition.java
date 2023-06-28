@@ -5,7 +5,7 @@ public class StringCondition {
 		
 		String s1 = "123";
 		String s3 = "123";
-		if(s1.equals(s3)) {
+		if(s1 == s3) {
 			System.out.println("s1은 123");
 		}else {
 			System.out.println("s1은 123아님");
