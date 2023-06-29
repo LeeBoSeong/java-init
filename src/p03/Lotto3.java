@@ -34,3 +34,6 @@ public class Lotto3 {
 			System.out.println(cnt+"개 ");
 		}
 	}
+
+
+//쪽지 시험 범위임
