@@ -15,7 +15,7 @@ public class GuGuDan2 {
 	
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("숫자 두개를 입력 하세요: " );
+		System.out.print("숫자 두개를 입력 하세요: ");
 		int scan = scanner.nextInt();
 		int scan2 = scanner.nextInt();
 		 printGuGuDan(scan,scan2);
