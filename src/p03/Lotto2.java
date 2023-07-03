@@ -7,7 +7,7 @@ public class Lotto2 {
 		 int [] lotto = new int[7];
 		 Random random = new Random();
 		 for(int i = 0; i < lotto.length; i++) {
-			 int rNum = random.nextInt(40)+1;
+			 int rNum = random.nextInt(6)+1;
 			 lotto[i] = rNum;
 			 for(int j = 0; j < i; j++) {
 				 if (lotto[j] == rNum) {

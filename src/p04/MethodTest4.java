@@ -2,7 +2,7 @@ package p04;
 
 public class MethodTest4 {
 	
-	public static int[] getLotto() { //메서드 = 기능을 저장하고 사용하기 위해 
+	public static int[] getLotto() { //중복이 없는 로또 번호 생성하는 메서드
 		int[] lotto = new int[6];
 		for(int i = 0; i < lotto.length; i++) {
 				int rNum = MethodTest2.getRandomNum(45);
