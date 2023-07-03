@@ -19,6 +19,7 @@ public class NumberBaseBall {
 					break;
 				}
 			}
+			
 		}
 		boolean check = true;
 		

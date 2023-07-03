@@ -6,9 +6,9 @@ public class HumanExec {
 	
 	
 	public static void printHumans(Human[] myhumans) {// 나이가 가장 많은 사람과 가장 적은사람, 평균 구하기, 평균과 가장 근접한 나이를 가진 사람 이름 출력
+		
 		Human max = myhumans[0];
 		Human min = myhumans[0];
-		
 		int maxidx = 0;
 		int minidx = 0;
 		int sum = 0;
@@ -27,10 +27,20 @@ public class HumanExec {
 		
 		int avr = sum/myhumans.length;
 		
+		int[] closeAvr = new int[myhumans.length];
+		int minusAvr = closeAvr[0];
+		for(int i = 0; i < myhumans.length; i++) {
+			closeAvr[i] = Math.abs(avr - myhumans[i].age); //각 나이대별로 평군과의 차이와 그 절댓값을 구해서 배열에 넣어줌
+			System.out.println(closeAvr[i]); 
+			if(minusAvr > closeAvr[i]) {
+				minusAvr = closeAvr[i];
+			}
+		}
 		
 		System.out.println("최고령 : "+max.name);
 		System.out.println("최연소 : "+min.name);
 		System.out.println("나이 평균 : " + avr);
+		System.out.println("가장 평균과 가까운 사람 : " + myhumans[minusAvr].name);
 		
 	}
 	
