@@ -39,11 +39,11 @@ public class CarExec {
 			if (carPric.price < cars[i].price) {
 				carPric = cars[i];
 			}
-			for(int j = i; j < (cars.length)-1; j++) {
+			for(int j = i; j < (cars.length); j++) {
 				if(carPric2.price < cars[j].price) {
 				carPric2 = cars[j];
 				}
-				for(int k = j; k < (cars.length)-2;k++) {
+				for(int k = j; k < (cars.length);k++) {
 					if(carPric3.price < cars[k].price) {
 						carPric3 = cars[k];
 					}

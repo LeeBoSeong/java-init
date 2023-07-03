@@ -19,7 +19,7 @@ public class MinMax {
 			}
 		}
 		System.out.println("최대값 : " + max + ", 인덱스 : "+ maxidx);
-		System.out.println("최대값 : " + min + ", 인덱스 : " + minidx);
+		System.out.println("최소값 : " + min + ", 인덱스 : " + minidx);
 			
 	}
 }
