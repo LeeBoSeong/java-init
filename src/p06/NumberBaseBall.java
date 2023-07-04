@@ -39,7 +39,7 @@ public class NumberBaseBall {
 	
 		int ball = 0;
 		int strike = 0;
-		for(int i = 0; i < compNums.length; i++) {
+		for(int i = 0; i < nums.length; i++) {
 			for(int j = 0; j < compNums.length; j++) {
 				if(compNums[i] == nums[j]) {
 					++ball;

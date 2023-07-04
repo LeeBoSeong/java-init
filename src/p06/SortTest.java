@@ -20,6 +20,5 @@ public class SortTest {
 			System.out.println(nums[i]);
 		
 		}
-		
 	}
 }

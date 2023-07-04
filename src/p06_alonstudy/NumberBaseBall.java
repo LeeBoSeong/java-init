@@ -13,13 +13,16 @@ public class NumberBaseBall {
 		
 		for(int i = 0; i < balls.length; i++) {
 			balls[i] = random.nextInt(10); 
+			int tmp = i;
 			for(int j = 0; j < i; j++) {
 				if (balls[i] == balls[j]) {
 					i--;
 					break;
 				}
 			}
-//			System.out.print(balls[i]+" ");
+			if(tmp==i) {
+				System.out.print(balls[i]+" ");
+			}
 		}
 		
 		
