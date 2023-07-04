@@ -31,25 +31,22 @@ public class CarExec {
 		cars[4].made = "이탈리아";
 		cars[4].price = 120000;
 		
-		Car carPric = cars[0];
-		Car carPric2 = cars[0];
-		Car carPric3 = cars[0];
 		
-		for(int i = 1; i < cars.length; i++) {
-			if (carPric.price < cars[i].price) {
-				carPric = cars[i];
-			}
-			for(int j = i; j < (cars.length); j++) {
-				if(carPric2.price < cars[j].price) {
-				carPric2 = cars[j];
-				}
-				for(int k = j; k < (cars.length);k++) {
-					if(carPric3.price < cars[k].price) {
-						carPric3 = cars[k];
-					}
+		for(int i = 0; i < cars.length; i++) {
+			Car max = cars[i];
+			int max1 = max.price;
+			int idx = i;
+			for(int j = i+1; j < cars.length; j++) {
+				if(max1 < cars[j].price) {
+					max = cars[j];
+					idx = j;
 				}
 			}
+			Car temp = cars[i];
+			cars[i] = max;
+			cars[idx] = temp;
+			
+			System.out.println(cars[i].name);
 		}
-		System.out.println("비싼차 : "+carPric.name + "||두번째 차 : "+carPric2.name +"||세번째 차 :" + carPric3.name);
 	}
 }

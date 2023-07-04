@@ -1,4 +1,4 @@
-package p06_alonstudy;
+package p06_alonStudy;
 
 import java.util.Random;
 import java.util.Scanner;
