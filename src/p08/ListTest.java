@@ -1,9 +1,11 @@
 package p08;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ListTest {
 	public static void main(String[] args) {
+		
 		String str1 = "안녕,";
 		String str2 = "내 소개를";
 		String str3 = " 하지";
@@ -32,12 +34,23 @@ public class ListTest {
 		System.out.println(strList.size());
 		strList.add("가");
 		System.out.println(strList.size());
-		
 		strList.remove(0);
 		System.out.println(strList.size());
+		System.out.println();
+//		
+//		for(int i = 0; i < strList.size(); i++) {
+//			System.out.println(strList.get(i));
+//		}
+		
+		System.out.println(strList.get(0));
+		System.out.println(strList.get(1));
+		System.out.println(strList.get(2));
+		System.out.println();
+		
 		
 		ArrayList<Integer> intList = new ArrayList<Integer>();
 		intList.add(1);
+		System.out.println(intList.get(0));
 		
 	}	
 }

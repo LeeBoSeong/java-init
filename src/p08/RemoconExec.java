@@ -13,6 +13,7 @@ public class RemoconExec {
 //		remotes[0]	= r1;
 //		remotes[1]	= r2;
 		
+		
 		Remote[] remotes = new Remote[2];
 		remotes[0]	= new AirConRemocon();
 		remotes[1]	= new TVRemocon();
