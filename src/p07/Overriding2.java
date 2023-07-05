@@ -32,6 +32,7 @@ public class Overriding2 {
 		Daughter d = new Daughter();
 		Mother m = new Mother();
 		
+		
 		Mother[] ms = new Mother[2];
 		ms[0] = d;
 		ms[1] = m;
