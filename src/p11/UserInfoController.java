@@ -31,6 +31,7 @@ public class UserInfoController {
 			System.out.print("번호 : "+userInfo.get("uiNum")+"|| 이름은 : "+userInfo.get("uiName")+"|| 아이디 : "+userInfo.get("uiId")+"|| 비밀번호 : "+ userInfo.get("uiPwd"));
 		}
 		
+		
 		parm.put("uiName", "이바보");
 		parm.put("uiId", "cs");
 		parm.put("uiPwd", "1234");
