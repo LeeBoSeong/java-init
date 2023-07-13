@@ -18,7 +18,6 @@ public class SortTest {
 			nums[i] = min;
 			nums[idx] = temp;
 			System.out.println(nums[i]);
-		
 		}
 	}
 }
