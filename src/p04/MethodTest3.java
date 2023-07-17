@@ -6,11 +6,11 @@ public class MethodTest3 {
 		
 	}
 	
-	public static int getNum() {
+	public static int getNum(String s) {
 		return 1;
 	}
 	public static void main(String[] args) {
-		int num = getNum();
+		int num = getNum("s");
 		System.out.println(num);
 	}
 }

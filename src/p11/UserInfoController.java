@@ -6,11 +6,13 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class UserInfoController {
+	
 	public List<Map<String,String>> getUserInfoList(Map<String,String> parm){
 		UserInfoService uiService = new UserInfoService();
 		
 		return uiService.getUserInfoList(parm);
 	}
+	
 	public int insertUserInfo(Map<String, String> userinfo) {
 		UserInfoService uiService = new UserInfoService();
 		return uiService.insertUserInfo(userinfo);

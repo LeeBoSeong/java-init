@@ -12,6 +12,7 @@ public class ListTest5 {
 		numList.add(35);
 		numList.add(17);
 		numList.add(4);
+		numList.add(4);
 		
 //		Collections.sort(numList); //자동 정렬
 //		System.out.println(numList);

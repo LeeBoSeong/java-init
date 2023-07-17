@@ -46,12 +46,12 @@ public class MapTest4 {
 		mapList.add(map4);
 		mapList.add(map5);
 
-		for (int i = 0; i < mapList.size(); i++) {
-			Map<String, String> mp = mapList.get(i);
-			Iterator<String> it = mp.keySet().iterator();
+		for(int i = 0; i< mapList.size();i++){
+			Map<String,String> maps = mapList.get(i);
+			Iterator<String> it = maps.keySet().iterator();
 			while (it.hasNext()) {
-				String key = it.next();
-				System.out.print(key+ ":" + mp.get(key)+"||");
+				String keyStr = it.next();
+				System.out.print("KEY : "+ keyStr +"| Velue : " + maps.get(keyStr)+" ||");
 			}
 			System.out.println();
 		}
